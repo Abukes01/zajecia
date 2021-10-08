@@ -79,3 +79,7 @@ import random as rnd
 #     elif nukleotyd == 'C':
 #         return print(C)
 # ileNukleotydow('AATGCCATCGAA', 'A')
+
+#Z6
+# napisz funkcje przechodzaca przez kod genetyczny i znajdujaca wyspecyfikowane fragmenty, zapisujac ich lokalizacje
+# zmodyfikuj ta funkcje aby dopisywala komplementarna nic dna/rna
