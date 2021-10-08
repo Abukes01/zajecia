@@ -78,6 +78,4 @@ import random as rnd
 #         return print(G)
 #     elif nukleotyd == 'C':
 #         return print(C)
-#
-#
 # ileNukleotydow('AATGCCATCGAA', 'A')
