@@ -19,7 +19,6 @@ class CalkiMetody(object):
             plt.plot(self.x, self.f(self.x))
             plt.xlabel('Ox')
             plt.ylabel('Oy')
-            plt.title('f(x)=(x^3)sin(x)')
             plt.savefig('savedPlot.png')
 
     def showPlot(self):
@@ -118,8 +117,8 @@ wybor =\
 [3] Metoda Monte-Carlo
 '''
 
-start = input('Wprowadź punkt startowy.\n ?>>')
-stop = input('Wprowadź punkt końcowy.\n ?>>')
+start = int(input('Wprowadź punkt startowy.\n ?>>'))
+stop = int(input('Wprowadź punkt końcowy.\n ?>>'))
 metody = CalkiMetody(start, stop)
 runMain = True
 # metody.showPlot()
