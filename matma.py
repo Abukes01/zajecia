@@ -44,7 +44,7 @@ class CalkiMetody(object):
                         x_0 += delta_x
                         x_1 += delta_x
                 run = False
-                return print(f"Wartość całkowania funkcji f(x)=(x^3)sin(x) metodą trapezów z {fragments} podziałami wynosi {out}"), self.showPlot()
+                return print(f"Wartość całkowania funkcji metodą trapezów z {fragments} podziałami wynosi {out}"), self.showPlot()
 
             except ValueError:
                 print('Wprowadzona wartość nie jest poprawną liczbą całkowitą')
@@ -74,7 +74,7 @@ class CalkiMetody(object):
                         suma_wartosci += self.f(x_1)
                 out = (delta_x * suma_wartosci)/3
                 run = False
-                return print(f"Wartość całkowania funkcji f(x)=(x^3)sin(x) metodą Simpsona z {fragments} podziałami wynosi {out}"), self.showPlot()
+                return print(f"Wartość całkowania funkcji metodą Simpsona z {fragments} podziałami wynosi {out}"), self.showPlot()
 
 
             except ValueError:
@@ -102,7 +102,7 @@ class CalkiMetody(object):
                         continue
                 integral = (np.pi * h1) * (points_above_x/total_points) + ((self.b_limit - np.pi) * self.f(self.b_limit)) * (points_under_x/total_points)
                 run = False
-                return print(f"Wartość całkowania funkcji f(x)=(x^3)sin(x) metodą Monte-Carlo z {total_points} punktami wynosi {integral}"), self.showPlot()
+                return print(f"Wartość całkowania funkcji metodą Monte-Carlo z {total_points} punktami wynosi {integral}"), self.showPlot()
 
             except ValueError:
                 print('Wprowadzona wartość nie jest poprawną liczbą całkowitą')
