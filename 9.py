@@ -10,10 +10,8 @@ V0 = 20
 przedzial = 1
 y = np.zeros((600,2))
 x = np.linspace(0,3*przedzial, 600)
-#y0_sym = y
 y0_sym = np.array([1, 0])
-#y0_asym = y
-#y0_asym[0] = [0, 1]
+#y0_asym = np.array([0, 1])
 print(y[1])
 
 def V(x):
